@@ -15,11 +15,13 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   background-color: #3f3b3b;
   color: #fff;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 ul {
