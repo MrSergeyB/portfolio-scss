@@ -87,28 +87,6 @@ p {
     opacity: 1;
     transform: translateY(0); } }
 
-.container .social-links {
-  min-height: 100vh;
-  width: 5vh;
-  background-color: #172a45;
-  position: fixed;
-  z-index: 1; }
-  .container .social-links__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 30rem; }
-  .container .social-links__link {
-    color: white;
-    font-size: 2rem; }
-    .container .social-links__link :hover {
-      color: #64ffdb; }
-
-.container .website-url {
-  writing-mode: vertical-rl;
-  text-orientation: upright; }
-
 .order {
   color: #64ffdb;
   display: inline-block;
@@ -303,50 +281,11 @@ p {
     .my-projects .projects-list .project-card:hover {
       transform: translateY(-1rem); }
 
-.education {
-  min-height: 100vh;
-  padding: 5rem; }
-  .education .title {
-    width: 50%;
-    font-size: 3.2rem;
-    margin-bottom: 3rem; }
-  .education-box {
-    display: flex;
-    justify-content: space-evenly; }
-    .education-box .description {
-      flex: 0 0 40%; }
-    .education-box .certificates-item {
-      flex: 0 0 50%;
-      padding-bottom: 0.7rem;
-      font-size: 1.6rem; }
-    .education-box .certificates .certificates-box {
-      position: relative;
-      display: flex;
-      justify-content: space-between; }
-      .education-box .certificates .certificates-box .education__certificates--list {
-        font-size: 1.4rem;
-        display: flex;
-        flex-wrap: wrap; }
-    .education-box .certificates-item::before {
-      content: "\203a";
-      color: #64ffdb;
-      font-size: 2.4rem;
-      line-height: 1.2rem;
-      padding-right: 0.7rem; }
-  .education__desctiption {
-    padding: 1rem 0; }
-
-.footer {
-  z-index: 1000;
+.footer-text {
   text-align: center;
-  padding: 2rem;
-  background-color: #172a45;
+  padding: 3rem;
+  background-color: #000;
   font-size: 1.3rem; }
-  .footer__list {
-    display: flex;
-    justify-content: center; }
-  .footer__item {
-    margin-right: 2rem; }
 
 @keyframes moveLeft {
   0% {

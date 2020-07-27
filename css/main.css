@@ -173,6 +173,47 @@ p {
   }
 }
 
+.container .social-links {
+  min-height: 100vh;
+  width: 5vh;
+  background-color: #172a45;
+  position: fixed;
+  z-index: 1;
+}
+
+.container .social-links__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30rem;
+}
+
+.container .social-links__link {
+  color: white;
+  font-size: 2rem;
+}
+
+.container .social-links__link :hover {
+  color: #64ffdb;
+}
+
+.container .website-url {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
 .order {
   color: #64ffdb;
   display: inline-block;
@@ -522,11 +563,90 @@ p {
           transform: translateY(-1rem);
 }
 
-.footer-text {
+.education {
+  min-height: 100vh;
+  padding: 5rem;
+}
+
+.education .title {
+  width: 50%;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
+
+.education-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.education-box .description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.education-box .certificates-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+}
+
+.education-box .certificates .certificates-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.education-box .certificates .certificates-box .education__certificates--list {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.education-box .certificates-item::before {
+  content: "\203a";
+  color: #64ffdb;
+  font-size: 2.4rem;
+  line-height: 1.2rem;
+  padding-right: 0.7rem;
+}
+
+.education__desctiption {
+  padding: 1rem 0;
+}
+
+.footer {
+  z-index: 1000;
   text-align: center;
-  padding: 3rem;
-  background-color: #000;
+  padding: 2rem;
+  background-color: #172a45;
   font-size: 1.3rem;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__item {
+  margin-right: 2rem;
 }
 
 @keyframes moveLeft {
